@@ -1,0 +1,85 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}  
+
+/* globales */
+
+video {
+    width: 100%;
+    margin: 0;
+    z-index: 0;
+}
+
+/* el aclamado clearfix de boiler plate, aplicar para margenes desfazados, apliacar sabiamente */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/** body **/
+
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.text {
+    background-color: brown;
+    overflow: hidden;
+    transition: filter .5s ease-in-out;
+    -webkit-transition: filter .5s ease-in-out;
+}
+
+.text:hover {
+    filter: grayscale(1);
+    overflow: hidden;
+    -webkit-filter: grayscale(1); 
+}
+
+.text2 {
+    background-color: lawngreen;
+}
+
+.text2:hover {
+    filter: grayscale(1);
+    overflow: hidden;
+    -webkit-filter: grayscale(1); 
+}
+
+.text3 {
+    background-color: mediumslateblue;
+    overflow: hidden;
+}
+
+.text3:hover {
+    filter: grayscale(1);
+    overflow: hidden;
+    -webkit-filter: grayscale(1); 
+}
+
+.text4 {
+    background-color: navy;
+    overflow: hidden;
+}
+
+.text4:hover {
+    filter: grayscale(1);
+    overflow: hidden;
+    -webkit-filter: grayscale(1); 
+}
